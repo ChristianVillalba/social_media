@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+  <h1>Log In</h1>
+  <form class="" action="" method="post">
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary" value="Login">
+  </form>
+</div>
+
+{% endblock %}
