@@ -1,5 +1,8 @@
 from django.urls import path
 from . import views
 
-class miko():
+class Willy():
+    pass
+
+class Moni():
     pass
