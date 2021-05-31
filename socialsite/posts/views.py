@@ -8,6 +8,7 @@ from braces.views import SelectRelatedMixin # pip install django-braces
 from . import forms
 from . import models
 from django.contrib.auth import get_user_model
+
 User = get_user_model()
 
 # Create your views here.
@@ -49,7 +50,7 @@ class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
         return super().form_valid(form)
 
 class DeletePost(LoginRequiredMixin, SelectRelatedMixin, generic.DeleteView):
-    models = models.POST
+    models = models.Post
     select_related = ("user","group")
     success_url = reverse_lazy("posts:all")
     def get_queryset(self):

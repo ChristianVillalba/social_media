@@ -22,13 +22,13 @@ class JoinGroup(LoginRequiredMixin, generic.RedirectView):
     def get_redirect_url(self,*args,**kwargs):
         return reverse("groups:single",kwargs={"slug":self.kwargs.get("slug")})
     def get(self,request,*args,**kwargs):
-        group = get_object_or_404(Group,sulg=self.kwargs.get("slug"))
+        group = get_object_or_404(Group,slug=self.kwargs.get("slug"))
         try:
             GroupMember.objects.create(user=self.request.user,group=group)
         except IntegrityError:
-            messages.warning(self.request, f"Warning: Already member of {group.name}")
+            messages.warning(self.request, F"Warning: Already member of {group.name}")
         else:
-            message.success(self.request, f"You are a member of the {group.name} group.")
+            messages.success(self.request, F"You are a member of the {group.name} group.")
         return super().get(request,*args,**kwargs)
 
 
@@ -39,11 +39,11 @@ class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
         try:
             membership = models.GroupMember.objects.filter(
                 user=self.request.user,
-                group__user=self.kwargs.get("slug")
+                group__slug=self.kwargs.get("slug")
             ).get()
         except models.GroupMember.DoesNotExist:
             messages.warning(self.request, "You can't leave this group because you aren't in it")
         else:
             membership.delete()
-            message.success(self.request, "You have left this group!")
+            messages.success(self.request, "You have left this group!")
         return super().get(request,*args,**kwargs)
