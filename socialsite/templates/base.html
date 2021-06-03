@@ -13,26 +13,55 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg bg-dark mynav" role="navigation" id="navbar">
-    <div class="container">
-      <div class="navbar-nav align-items-center">
-        <a class="navbar-brand mynav" href="{% url 'home' %}">Star Social</a>
-      </div>
-      <div class="navbar-nav ml-auto">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="http://placehold.it/150x50?text=Logo" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
-        <a class="nav-item nav-link" href="{% url 'posts:create' %}" class="btn btn-simple">Post</a>
-        <a class="nav-item nav-link" href="{% url 'groups:all' %}" class="btn btn-simple">Groups</a>
-        <a class="nav-item nav-link" href="{% url 'groups:create' %}" class="btn btn-simple">Create Group</a>
-        <a class="nav-item nav-link" href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a>
+        <!-- Home Button -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'posts:create' %}">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'groups:all' %}">Groups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'groups:create' %}">Create Group</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:logout' %}">Log out</a>
+        </li>
         {% else %}
-        <a class="nav-item nav-link" href="{% url 'accounts:signup' %}"class="btn btn-simple">Groups</a>
-        <a class="nav-item nav-link" href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a>
-        <a class="nav-item nav-link" href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'groups:all' %}">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:login' %}">Groups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:signup' %}">Sign up</a>
+        </li>
         {% endif %}
-      </div>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+
 
 <!-- Content -->
   {% block body %}
