@@ -9,7 +9,9 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- CSS -->
-  <link rel="stylesheet" href="{% static 'socialsite/css/master.css' %}">
+  <link rel="stylesheet" href="{% static 'css/master.css'%}">
+  <link rel="stylesheet" href="{% static 'socialsite/css/master.css'%}">
+
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">
-          <img src="http://placehold.it/150x50?text=Logo" alt="">
+          Social Django
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,10 +48,10 @@
         </li>
         {% else %}
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'groups:all' %}">Log In</a>
+          <a class="nav-link" href="{% url 'groups:all' %}">Groups</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'accounts:login' %}">Groups</a>
+          <a class="nav-link" href="{% url 'accounts:login' %}">Log In</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'accounts:signup' %}">Sign up</a>
@@ -66,7 +68,10 @@
 <!-- Content -->
   {% block body %}
   {% endblock %}
+<!-- My JavaScript -->
+<script type="text/javascript" src="{% static 'js/master.js' %}">
 
+</script>
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
