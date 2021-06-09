@@ -4,6 +4,7 @@
 {% block group_content %}
 <div class="container">
   <h3>Create A New Group</h3>
+  <p>Once the Group is created only Admins have permissions to delete it.</p>
   <form method="POST" action="{% url 'groups:create' %}" id="groupForm">
     {% csrf_token %}
     {{ form|crispy }}
