@@ -17,7 +17,6 @@
   <!-- Bootstrap now included and modified in static/css/master.css-->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   <!-- CSS -->
-  <link rel="stylesheet" href="{% static 'css/master.css'%}">
   <link rel="stylesheet" href="{% static 'socialsite/css/master.css'%}">
 </head>
 
@@ -75,15 +74,26 @@
         <div class="col-md-10 col-lg-8 col-xl-7">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/christian-villalba-2233ab206/">
+              <a href="mailto:christianvillalba.uk@gmail.com" target="_blank"
+          data-toggle="tooltip" data-placement="top" title="Go to my Main Webpage">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <!-- <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/christian-villalba-2233ab206/" target="_blank"
+          data-toggle="tooltip" data-placement="top" title="Go to my LinkedIn Profile">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
-            </li>
+            </li> -->
             <li class="list-inline-item">
-              <a href="https://github.com/ChristianVillalba!">
+              <a href="https://github.com/ChristianVillalba!" target="_blank"
+          data-toggle="tooltip" data-placement="top" title="Check the repository of this project">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -91,7 +101,8 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="mailto:christianvillalba.uk@gmail.com">
+              <a href="mailto:christianvillalba.uk@gmail.com" target="_blank"
+          data-toggle="tooltip" data-placement="top" title="Send me an email">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -107,7 +118,7 @@
 
 
   <!-- My JavaScript -->
-  <script type="text/javascript" src="{% static 'js/master.js' %}">
+  <script type="text/javascript" src="{% static 'socialsite/js/master.js' %}">
 
   </script>
   <!-- Bootstrap -->
