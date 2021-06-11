@@ -1,4 +1,4 @@
-alert("Hello Cristian! We are fixing the navbar test 3!");
+alert("Hello World! We are fixing the navbar test 5!");
 
 // Enable Tooltips
 $(function () {
