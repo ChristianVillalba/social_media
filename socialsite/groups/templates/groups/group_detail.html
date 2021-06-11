@@ -3,16 +3,18 @@
 {% block pregroup %}
 <div class="container">
   <h1>{{group.name}}</h1>
+  <br>
   <h2> Member Count: {{group.members.count}}</h2>
-  <div class="content">
+  <div class="">
   	{% if user in group.members.all %}
   		<a href="{% url 'groups:leave' slug=group.slug %}" class="btn btn-lg btn-warning">
-        <span class="fa fa-times-circle-o"></span> Leave</a>
+        <span class="fas fa-times-circle"></span> Leave</a>
   	{% else %}
-  		<a href="{% url 'groups:join' slug=group.slug %}" class="btn btn-lg btn-warning">
-        <span class="fa fa-check-circle-o"></span> Join</a>
+  		<a href="{% url 'groups:join' slug=group.slug %}" class="btn btn-lg btn-success">
+        <span class="fas fa-check-circle"></span> Join</a>
   	{% endif %}
   </div>
+  <br>
 </div>
 {% endblock %}
 
