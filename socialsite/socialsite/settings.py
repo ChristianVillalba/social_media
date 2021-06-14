@@ -21,6 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-s7p3437(i2fu3i9if2g#yjpq752_t3lnecsicy9y2$3sy%tf79'
+# CHANGE THE SECRET KEY:
+# https://miniwebtool.com/django-secret-key-generator/
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
