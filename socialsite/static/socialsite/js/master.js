@@ -1,5 +1,3 @@
-alert("Hello ! We are Testing!");
-
 // Enable Tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
