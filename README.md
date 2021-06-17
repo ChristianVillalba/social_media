@@ -3,10 +3,10 @@
 The last project in the course:     
 Python and Django Full Stack Web Developer Bootcamp    
 is a social media site, however, the course is not updated to Django 3     
-I updated the project using the Django Documentation and some external resources.
-Original project:      
-https://github.com/ChristianVillalba/DJANGO_COURSE_1.xx
-My project:     
+I updated the project using the Django Documentation and some external resources.     
+· Original project:         
+https://github.com/ChristianVillalba/DJANGO_COURSE_1.xx     
+· My project:     
 https://github.com/ChristianVillalba/social_media
 
 
