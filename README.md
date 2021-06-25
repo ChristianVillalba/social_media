@@ -1,4 +1,8 @@
-#Social Media Site
+# Social Media Site
+
+Dynamic Website created using Django as back-end technology.
+
+## Description
 
 The last project in the course:     
 Python and Django Full Stack Web Developer Bootcamp    
@@ -9,6 +13,62 @@ https://github.com/ChristianVillalba/DJANGO_COURSE_1.xx
 · My project:     
 https://github.com/ChristianVillalba/social_media
 
+### Dependencies
+* Anaconda (Python distribution)
+
+To avoid compatibility issues, please use:     
+* Python version: 3.9     
+* Django version: 3.2   
+
+Check What Python version can I use with Django?:     
+https://docs.djangoproject.com/en/3.2/faq/install/
+
+
+### Installing
+
+Create a Virtual Environment using Python 3.9 
+```
+conda-create --name myDjango3Env python=3.9 
+```
+Activate the Virtual Environment 
+```
+activate myDjango3Env 
+```
+
+Install Django 3.2 in our Virtual Environment 
+```
+pip install django=3.2
+```
+
+Install the packages:    
+
+· django-crispy-forms:   
+```
+pip install django-crispy-forms  
+```
+· django-braces:       
+```
+pip install django-brace  
+```
+· misaka:  
+```
+pip install django-misaka     
+```
+In case of Error , use conda distribution: 
+```
+conda install -c conda-forge misaka   
+```
+
+
+## Author
+
+Christian Villalba
+
+
+## Acknowledgments
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [SimpleIsBetterThanComplex](https://simpleisbetterthancomplex.com/)
+* [Bootstrap - Clean Blog](https://startbootstrap.com/theme/clean-blog)
 
 SET UP:
 Python version: 3.9     
@@ -28,3 +88,7 @@ https://startbootstrap.com/theme/clean-blog
 
 CHANGE the SECRET_KEY in settings.py :      
 https://miniwebtool.com/django-secret-key-generator/
+
+
+
+
