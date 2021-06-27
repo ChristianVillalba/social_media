@@ -13,6 +13,14 @@ https://github.com/ChristianVillalba/DJANGO_COURSE_1.xx
 · My project:     
 https://github.com/ChristianVillalba/social_media
 
+## What I’ve learned from this project
+
+· Differences between Django 1 and Django 3     
+· User authentication     
+· How Django Models and the Admin App create and modify the database     
+· Add packages and libraries to add functionality to my projects
+
+
 ### Dependencies
 * Anaconda (Python distribution)
 
@@ -59,6 +67,8 @@ In case of Error , use conda distribution:
 conda install -c conda-forge misaka   
 ```
 
+if necessary, change the SECRET_KEY in settings.py :      
+https://miniwebtool.com/django-secret-key-generator/
 
 ## Author
 
@@ -66,28 +76,12 @@ Christian Villalba
 
 
 ## Acknowledgments
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [Jose Portilla](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/)
 * [SimpleIsBetterThanComplex](https://simpleisbetterthancomplex.com/)
 * [Bootstrap - Clean Blog](https://startbootstrap.com/theme/clean-blog)
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
 
-SET UP:
-Python version: 3.9     
-Django version: 3.2   
-+Packages:     
-· django-crispy-forms:     
-pip install django-crispy-forms     
-https://simpleisbetterthancomplex.com/tutorial/2018/08/13/how-to-use-bootstrap-4-forms-with-django.html     
-· misaka:     
-pip install django-misaka     
-in case of Error , use conda distribution: conda install -c conda-forge misaka     
-· django-braces:     
-pip install django-braces      
 
-New: Bootstrap template - Clean Blog     
-https://startbootstrap.com/theme/clean-blog
-
-CHANGE the SECRET_KEY in settings.py :      
-https://miniwebtool.com/django-secret-key-generator/
 
 
 
