@@ -1,8 +1,19 @@
 # Social Media Site
 
-Dynamic Website created using Django as back-end technology.
+Dynamic Social Media Website created using Django as back-end technology.    
+
 
 ## Description
+
+This is a Social Media Site that allows Users to send short Posts.    
+The Posts are grouped in Groups dedicated to particular topics.   
+Users can Log In and New Users can Sign Up.    
+Every visitor can check out the Groups and read the Posts, but...     
+only Users can Crate New Groups and Posts in the Groups.     
+Users can join to the Groups they want.    
+Each User have a Post History Page     
+Users can delete their Posts, but only Admins can delete the Groups,    
+this protects the rest of the posts in those Groups.    
 
 The last project in the course:     
 Python and Django Full Stack Web Developer Bootcamp    
@@ -81,7 +92,7 @@ Christian Villalba
 * [Jose Portilla](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/)
 * [SimpleIsBetterThanComplex](https://simpleisbetterthancomplex.com/)
 * [Bootstrap - Clean Blog](https://startbootstrap.com/theme/clean-blog)
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [A simple README](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
 
 
 
