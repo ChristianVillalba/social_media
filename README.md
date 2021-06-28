@@ -17,7 +17,9 @@ https://github.com/ChristianVillalba/social_media
 
 · Differences between Django 1 and Django 3     
 · User authentication     
-· How Django Models and the Admin App create and modify the database     
+· How Django Models and the Admin App create and modify the database   
+· Django's MVT (Model View Template) architecture  
+· CRUD (Create, Retrieve, Update, Delete) operations             
 · Add packages and libraries to add functionality to my projects
 
 
